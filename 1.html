@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1 Details</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        header {
+            width: 100%;
+            height: 50vh;
+            background: url('#') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(50%);
+        }
+        header h1 {
+            color: #fff;
+            font-size: 3.0em;
+            z-index: 2;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .description-sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .description-section {
+            width: 45%; /* Adjust as needed */
+            margin: 10px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .description-section h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .description-section p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #333;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 1.0em;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #aaa;
+        }
+        @media (max-width: 768px) {
+            .description-section {
+                width: 90%; /* Adjusted width for smaller screens */
+            }
+            header h1 {
+                font-size: 2.0em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1><a style="color: tomato;">The Credit Plug Services</a></h1>
+    </header>
+
+    <div class="content">
+        <h2>Product 1: BUSINESS PACKAGES</h2>
+        
+        <div class="description-sections">
+            <div class="description-section">
+                <h3>Overview</h3>
+                <p>Our Business Packages offer a comprehensive suite of solutions designed to streamline your operations and enhance productivity. From basic to advanced packages, we cater to various business needs.</p>
+            </div>
+
+            <div class="description-section">
+                <h3>Features</h3>
+                <p>Each package includes features such as 24/7 customer support, customizable plans, and integrated software solutions. Tailor the package to fit your specific requirements and get the best value for your investment.</p>
+            </div>
+
+            <div class="description-section">
+                <h3>Benefits</h3>
+                <p>By choosing our Business Packages, you gain access to cutting-edge technology, improved efficiency, and a dedicated team of experts to help you every step of the way. Enjoy peace of mind with our reliable services.</p>
+            </div>
+
+            <div class="description-section">
+                <h3>Pricing</h3>
+                <p>Our pricing structure is designed to be transparent and competitive. We offer flexible payment options and periodic discounts to ensure you receive the best possible value for your business.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Business Name. All Rights Reserved.</p>
+        <p><a href="mailto:contact@yourbusiness.com" style="color: #aaa;">contact@yourbusiness.com</a></p>
+    </footer>
+</body>
+</html>
